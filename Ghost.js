@@ -1,6 +1,4 @@
 import { DIRECTIONS, OBJECT_TYPE } from "./setup";
-import ghostMovement from "./ghostMovement";
-
 class Ghost {
   constructor(speed = 5, startPosition, movement, name) {
     this.name = name;
@@ -15,7 +13,7 @@ class Ghost {
   }
 
   shouldMove() {
-    if (this.times === this.speed) {
+    if (this.timer === this.speed) {
       this.timer = 0;
       return true;
     }

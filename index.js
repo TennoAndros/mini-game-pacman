@@ -14,7 +14,7 @@ const gameGrid = document.querySelector("#game");
 const scoreTable = document.querySelector("#score");
 const startButton = document.querySelector("#start-button");
 
-const POWER_PILL_TIME = 15000;
+const POWER_PILL_TIME = 10000;
 const GLOBAL_SPEED = 80;
 const gameBoard = GameBoard.createGameBoard(gameGrid, LEVEL);
 
@@ -68,8 +68,9 @@ function checkCollision(pacman, ghosts) {
 function gameLoop(pacman, ghosts) {
   gameBoard.moveCharacter(pacman);
   checkCollision(pacman, ghosts);
-
-  ghosts.forEach((ghost) => gameBoard.moveCharacter(ghost));
+  ghosts.forEach((ghost) => {
+    gameBoard.moveCharacter(ghost);
+  });
   checkCollision(pacman, ghosts);
 
   if (gameBoard.objectExists(pacman.position, OBJECT_TYPE.DOT)) {

@@ -592,7 +592,7 @@ const soundGhost = require("452ddb28132dce2c");
 const gameGrid = document.querySelector("#game");
 const scoreTable = document.querySelector("#score");
 const startButton = document.querySelector("#start-button");
-const POWER_PILL_TIME = 15000;
+const POWER_PILL_TIME = 10000;
 const GLOBAL_SPEED = 80;
 const gameBoard = (0, _gameBoardDefault.default).createGameBoard(gameGrid, (0, _setup.LEVEL));
 let score = 0;
@@ -635,7 +635,9 @@ function checkCollision(pacman, ghosts) {
 function gameLoop(pacman, ghosts) {
     gameBoard.moveCharacter(pacman);
     checkCollision(pacman, ghosts);
-    ghosts.forEach((ghost)=>gameBoard.moveCharacter(ghost));
+    ghosts.forEach((ghost)=>{
+        gameBoard.moveCharacter(ghost);
+    });
     checkCollision(pacman, ghosts);
     if (gameBoard.objectExists(pacman.position, (0, _setup.OBJECT_TYPE).DOT)) {
         playAudio(soundDot);
@@ -687,7 +689,7 @@ function startGame() {
 }
 startButton.addEventListener("click", startGame);
 
-},{"./setup":"b1uhz","./GameBoard":"2NYHR","./Pacman":"dnwXd","./ghostMovement":"eK1QA","./Ghost":"1xT3w","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","2e7478b6c3d5803f":"Jn4sK","228de6ccdeb7b623":"2Ipe7","ef0456028a6e7e0":"fLvF3","8e74c180d2ccbe69":"YW1z5","452ddb28132dce2c":"eO2UM"}],"b1uhz":[function(require,module,exports) {
+},{"./setup":"b1uhz","./GameBoard":"2NYHR","./Pacman":"dnwXd","./ghostMovement":"eK1QA","./Ghost":"1xT3w","2e7478b6c3d5803f":"Jn4sK","228de6ccdeb7b623":"2Ipe7","ef0456028a6e7e0":"fLvF3","8e74c180d2ccbe69":"YW1z5","452ddb28132dce2c":"eO2UM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b1uhz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GRID_SIZE", ()=>GRID_SIZE);
@@ -1380,8 +1382,6 @@ exports.default = randomMovement;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _setup = require("./setup");
-var _ghostMovement = require("./ghostMovement");
-var _ghostMovementDefault = parcelHelpers.interopDefault(_ghostMovement);
 class Ghost {
     constructor(speed = 5, startPosition, movement, name){
         this.name = name;
@@ -1395,7 +1395,7 @@ class Ghost {
         this.rotation = false;
     }
     shouldMove() {
-        if (this.times === this.speed) {
+        if (this.timer === this.speed) {
             this.timer = 0;
             return true;
         }
@@ -1435,7 +1435,7 @@ class Ghost {
 }
 exports.default = Ghost;
 
-},{"./setup":"b1uhz","./ghostMovement":"eK1QA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"Jn4sK":[function(require,module,exports) {
+},{"./setup":"b1uhz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"Jn4sK":[function(require,module,exports) {
 module.exports = require("2048747ced4d6a39").getBundleURL("UckoE") + "munch.c68cc271.wav" + "?" + Date.now();
 
 },{"2048747ced4d6a39":"lgJ39"}],"lgJ39":[function(require,module,exports) {
