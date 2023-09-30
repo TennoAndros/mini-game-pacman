@@ -584,10 +584,15 @@ var _ghostMovement = require("./ghostMovement");
 var _ghostMovementDefault = parcelHelpers.interopDefault(_ghostMovement);
 var _ghost = require("./Ghost");
 var _ghostDefault = parcelHelpers.interopDefault(_ghost);
+const soundDot = require("2e7478b6c3d5803f");
+const soundPill = require("228de6ccdeb7b623");
+const soundGameStart = require("ef0456028a6e7e0");
+const soundGameOver = require("8e74c180d2ccbe69");
+const soundGhost = require("452ddb28132dce2c");
 const gameGrid = document.querySelector("#game");
 const scoreTable = document.querySelector("#score");
 const startButton = document.querySelector("#start-button");
-const POWER_PILL_TIME = 10000;
+const POWER_PILL_TIME = 15000;
 const GLOBAL_SPEED = 80;
 const gameBoard = (0, _gameBoardDefault.default).createGameBoard(gameGrid, (0, _setup.LEVEL));
 let score = 0;
@@ -595,7 +600,12 @@ let timer = null;
 let gameWin = false;
 let powerPillActive = false;
 let powerPillTimer = null;
+function playAudio(audio) {
+    const soundEffect = new Audio(audio);
+    soundEffect.play();
+}
 function gameOver(pacman, grid) {
+    playAudio(soundGameOver);
     document.removeEventListener("keydown", (event)=>pacman.handleKeyInput(event, gameBoard.objectExists.bind(gameBoard)));
     gameBoard.showGameStatus(gameWin);
     clearInterval(timer);
@@ -605,6 +615,7 @@ function checkCollision(pacman, ghosts) {
     const collidedGhost = ghosts.find((ghost)=>pacman.position === ghost.position);
     if (collidedGhost) {
         if (pacman.powerPill) {
+            playAudio(soundGhost);
             gameBoard.removeObject(collidedGhost.position, [
                 (0, _setup.OBJECT_TYPE).GHOST,
                 (0, _setup.OBJECT_TYPE).SCARED,
@@ -627,6 +638,7 @@ function gameLoop(pacman, ghosts) {
     ghosts.forEach((ghost)=>gameBoard.moveCharacter(ghost));
     checkCollision(pacman, ghosts);
     if (gameBoard.objectExists(pacman.position, (0, _setup.OBJECT_TYPE).DOT)) {
+        playAudio(soundDot);
         gameBoard.removeObject(pacman.position, [
             (0, _setup.OBJECT_TYPE).DOT
         ]);
@@ -634,6 +646,7 @@ function gameLoop(pacman, ghosts) {
         score += 10;
     }
     if (gameBoard.objectExists(pacman.position, (0, _setup.OBJECT_TYPE).PILL)) {
+        playAudio(soundPill);
         gameBoard.removeObject(pacman.position, [
             (0, _setup.OBJECT_TYPE).PILL
         ]);
@@ -646,9 +659,14 @@ function gameLoop(pacman, ghosts) {
         powerPillActive = pacman.powerPill;
         ghosts.forEach((ghost)=>ghost.isScared = pacman.powerPill);
     }
+    if (gameBoard.dotCount === 0) {
+        gameWin = true;
+        gameOver(pacman, ghosts);
+    }
+    scoreTable.innerHTML = score;
 }
 function startGame() {
-    //   playAudio(soundGameStart);
+    playAudio(soundGameStart);
     gameWin = false;
     powerPillActive = false;
     score = 0;
@@ -669,7 +687,7 @@ function startGame() {
 }
 startButton.addEventListener("click", startGame);
 
-},{"./setup":"b1uhz","./GameBoard":"2NYHR","./Pacman":"dnwXd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./ghostMovement":"eK1QA","./Ghost":"1xT3w"}],"b1uhz":[function(require,module,exports) {
+},{"./setup":"b1uhz","./GameBoard":"2NYHR","./Pacman":"dnwXd","./ghostMovement":"eK1QA","./Ghost":"1xT3w","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","2e7478b6c3d5803f":"Jn4sK","228de6ccdeb7b623":"2Ipe7","ef0456028a6e7e0":"fLvF3","8e74c180d2ccbe69":"YW1z5","452ddb28132dce2c":"eO2UM"}],"b1uhz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GRID_SIZE", ()=>GRID_SIZE);
@@ -1417,6 +1435,56 @@ class Ghost {
 }
 exports.default = Ghost;
 
-},{"./setup":"b1uhz","./ghostMovement":"eK1QA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["2UeK4","bB7Pu"], "bB7Pu", "parcelRequire2a9d")
+},{"./setup":"b1uhz","./ghostMovement":"eK1QA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"Jn4sK":[function(require,module,exports) {
+module.exports = require("2048747ced4d6a39").getBundleURL("UckoE") + "munch.c68cc271.wav" + "?" + Date.now();
+
+},{"2048747ced4d6a39":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"2Ipe7":[function(require,module,exports) {
+module.exports = require("c6116c930edad911").getBundleURL("UckoE") + "pill.ca3fa8cf.wav" + "?" + Date.now();
+
+},{"c6116c930edad911":"lgJ39"}],"fLvF3":[function(require,module,exports) {
+module.exports = require("9993f32dc0b832d1").getBundleURL("UckoE") + "game_start.89e0045d.wav" + "?" + Date.now();
+
+},{"9993f32dc0b832d1":"lgJ39"}],"YW1z5":[function(require,module,exports) {
+module.exports = require("bc2bec26990adc1c").getBundleURL("UckoE") + "death.0d78249f.wav" + "?" + Date.now();
+
+},{"bc2bec26990adc1c":"lgJ39"}],"eO2UM":[function(require,module,exports) {
+module.exports = require("163eb681fdfbfa5b").getBundleURL("UckoE") + "eat_ghost.32586e2e.wav" + "?" + Date.now();
+
+},{"163eb681fdfbfa5b":"lgJ39"}]},["2UeK4","bB7Pu"], "bB7Pu", "parcelRequire2a9d")
 
 //# sourceMappingURL=index.3d214d75.js.map

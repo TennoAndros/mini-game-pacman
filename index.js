@@ -4,11 +4,17 @@ import Pacman from "./Pacman";
 import randomMovement from "./ghostMovement";
 import Ghost from "./Ghost";
 
+const soundDot = require("url:./assets/sounds/munch.wav");
+const soundPill = require("url:./assets/sounds/pill.wav");
+const soundGameStart = require("url:./assets/sounds/game_start.wav");
+const soundGameOver = require("url:./assets/sounds/death.wav");
+const soundGhost = require("url:./assets/sounds/eat_ghost.wav");
+
 const gameGrid = document.querySelector("#game");
 const scoreTable = document.querySelector("#score");
 const startButton = document.querySelector("#start-button");
 
-const POWER_PILL_TIME = 10000;
+const POWER_PILL_TIME = 15000;
 const GLOBAL_SPEED = 80;
 const gameBoard = GameBoard.createGameBoard(gameGrid, LEVEL);
 
@@ -18,7 +24,14 @@ let gameWin = false;
 let powerPillActive = false;
 let powerPillTimer = null;
 
+function playAudio(audio) {
+  const soundEffect = new Audio(audio);
+  soundEffect.play();
+}
+
 function gameOver(pacman, grid) {
+  playAudio(soundGameOver);
+
   document.removeEventListener("keydown", (event) =>
     pacman.handleKeyInput(event, gameBoard.objectExists.bind(gameBoard))
   );
@@ -35,6 +48,8 @@ function checkCollision(pacman, ghosts) {
   );
   if (collidedGhost) {
     if (pacman.powerPill) {
+      playAudio(soundGhost);
+
       gameBoard.removeObject(collidedGhost.position, [
         OBJECT_TYPE.GHOST,
         OBJECT_TYPE.SCARED,
@@ -58,12 +73,15 @@ function gameLoop(pacman, ghosts) {
   checkCollision(pacman, ghosts);
 
   if (gameBoard.objectExists(pacman.position, OBJECT_TYPE.DOT)) {
+    playAudio(soundDot);
     gameBoard.removeObject(pacman.position, [OBJECT_TYPE.DOT]);
     gameBoard.dotCount--;
     score += 10;
   }
 
   if (gameBoard.objectExists(pacman.position, OBJECT_TYPE.PILL)) {
+    playAudio(soundPill);
+
     gameBoard.removeObject(pacman.position, [OBJECT_TYPE.PILL]);
 
     pacman.powerPill = true;
@@ -80,10 +98,17 @@ function gameLoop(pacman, ghosts) {
     powerPillActive = pacman.powerPill;
     ghosts.forEach((ghost) => (ghost.isScared = pacman.powerPill));
   }
+
+  if (gameBoard.dotCount === 0) {
+    gameWin = true;
+    gameOver(pacman, ghosts);
+  }
+
+  scoreTable.innerHTML = score;
 }
 
 function startGame() {
-//   playAudio(soundGameStart);
+  playAudio(soundGameStart);
 
   gameWin = false;
   powerPillActive = false;

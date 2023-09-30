@@ -12,10 +12,10 @@
 113D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@babel\core\lib\config\resolve-targets.js133405537452991118 0
 143D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\function\var.js133405539748268203 0
 93D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\js-yaml\lib\schema.js133405539718359832 0
-67D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\Ghost.js133405675296394687 0
+67D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\Ghost.js133405732245953648 0
 152D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\parcel_sourcemap_wasm_bg.wasm133405539811774648 0
 115D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\workers\lib\threads\ThreadsChild.js133405539747175895 0
-63D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist133405680581407763 1
+63D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist133405806207794319 1
 144D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-posthtml\node_modules\semver\functions\prerelease.js133405539720899200 0
 110D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\source-map\lib\source-map-generator.js133405539709340591 0
 102D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\css-tree\cjs\walker\create.cjs133405539719543594 0
@@ -68,10 +68,10 @@
 148D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Operator.js133405539744750295 0
 103D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\regions\LT.js133405537468550075 0
 99D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\utility-types\dist\index.js133405539706186321 0
-69D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\index.html133405629992058238 0
+69D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\index.html133405702440695701 0
 119D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@babel\types\lib\validators\isReferenced.js.map133405537460968426 0
 101D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\css-select\lib\compile.js.map133405539724161128 0
-71D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\GameBoard.js133405657454284692 0
+71D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\GameBoard.js133405729604384606 0
 124D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@jridgewell\trace-mapping\dist\trace-mapping.mjs.map133405537434841565 0
 85D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\react-refresh133405539720290315 1
 101D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\weak-lru-cache\dist\index.cjs133405539700278237 0
@@ -80,7 +80,7 @@
 120D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\LICENSE133405539727151862 0
 114D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@babel\helper-define-polyfill-provider\lib133405537659990112 1
 95D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\csso\cjs\replace\atrule133405539718980822 1
-75D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\ghostMovement.js133405679198851364 0
+75D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\ghostMovement.js133405683254368874 0
 114D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-image\src\loadSharp.js133405539767740294 0
 102D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\update-browserslist-db\LICENSE133405537431417432 0
 81D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\type-fest133405539711955889 1
@@ -108,7 +108,7 @@
 137D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\css-select\node_modules\entities\lib\esm\generated\encode-html.js133405539709360558 0
 125D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\reporter-cli\node_modules\has-flag\index.d.ts133405539698308979 0
 103D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\regions\AE.js133405537439020596 0
-67D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\index.js133405680580963757 0
+67D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\index.js133405807889892525 0
 147D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\pseudo\index.js133405539734424967 0
 68D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\README.md133403748999806756 0
 93D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@trysound\sax\LICENSE133405539696875624 0
@@ -145,7 +145,7 @@
 123D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_copy.c133405539734504989 0
 136D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-babel\node_modules\semver\functions\clean.js133405539700028228 0
 109D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\svgo\lib\svgo\css-select-adapter.d.ts133405539735470511 0
-71D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\package.json133405542489071917 0
+71D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\package.json133405813239116340 0
 124D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\codeframe\node_modules\chalk\source\index.js133405539698559988 0
 90D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\.package-lock.json133405540244261296 0
 99D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\css-tree\lib\lexer\Lexer.js133405539753447249 0
@@ -154,7 +154,7 @@
 123D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@swc\helpers\src\_class_apply_descriptor_update.mjs133405539755021648 0
 101D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\svgo\plugins\removeDoctype.js133405539727131846 0
 103D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\regions\TC.js133405537472602260 0
-68D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\style.css133405664344869509 0
+68D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\style.css133405730329270035 0
 88D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\is-json\index.js133405539703424238 0
 115D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\features\localecompare.js133405537468500938 0
 119D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\fs-search\fs-search.linux-x64-musl.node133405539760537292 0
@@ -174,7 +174,7 @@
 102D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\type-fest\ts41\camel-case.d.ts133405539706226604 0
 109D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\type-fest\source\merge-exclusive.d.ts133405539715200111 0
 112D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\features\matchmedia.js133405537468709047 0
-67D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\setup.js133405545071174365 0
+67D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\setup.js133405723151551629 0
 109D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\type-fest\source\set-return-type.d.ts133405539721900456 0
 90D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\lru-cache\index.js133405537431729430 0
 110D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\htmlnano\lib\modules\sortAttributes.js133405539733767621 0
@@ -4742,7 +4742,7 @@
 103D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\regions\JP.js133405537467762758 0
 118D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\features\css-touch-action.js133405537463694166 0
 103D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\regions\KE.js133405537467902849 0
-81D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3d214d75.js133405680581321663 0
+81D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3d214d75.js133405806207774317 0
 154D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\pseudo\nth-last-of-type.js133405539739499195 0
 103D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\regions\KG.js133405537468021277 0
 103D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\caniuse-lite\data\regions\KM.js133405537468071083 0
@@ -5469,7 +5469,7 @@
 109D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@swc\helpers\_\_decorate\package.json133405539753186406 0
 113D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@swc\helpers\_\_create_class\package.json133405539753106453 0
 132D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@swc\helpers\_\_class_static_private_method_get\package.json133405539753046480 0
-74D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.html133405679886903290 0
+74D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.html133405805823367627 0
 132D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@babel\helper-define-polyfill-provider\lib\visitors\index.js133405537660020112 0
 136D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@swc\helpers\_\_class_static_private_field_spec_set\package.json133405539753006424 0
 125D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@swc\helpers\_\_class_private_method_get\package.json133405539752669250 0
@@ -6183,7 +6183,7 @@
 125D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\index.js133405539721880443 0
 130D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-html\node_modules\yallist\package.json133405539700719775 0
 127D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-html\node_modules\yallist\README.md133405539703354234 0
-82D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3a01df49.css133405679886903290 0
+82D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3a01df49.css133405805823287282 0
 128D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-html\node_modules\yallist\yallist.js133405539699727563 0
 124D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-html\node_modules\semver\classes133405539726020351 1
 126D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\transformer-html\node_modules\semver\functions133405539727840164 1
@@ -6450,7 +6450,7 @@
 128D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\reporter-cli\node_modules\ansi-styles\index.d.ts133405539703584220 0
 82D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\assets\sounds\munch.wav133405548799326297 0
 126D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\reporter-cli\node_modules\ansi-styles\index.js133405539698359062 0
-83D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\pacman.fa9a333a.png133405632055541003 0
+83D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\pacman.fa9a333a.png133405805823257138 0
 111D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@babel\helpers\lib\helpers\using.js.map133405537448265152 0
 139D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\tokenizer\const.js133405539714587721 0
 127D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\@parcel\reporter-cli\node_modules\ansi-styles\readme.md133405539700903415 0
@@ -7743,9 +7743,9 @@
 84D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\.bin\resolve133405537661210680 0
 88D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\.bin\resolve.ps1133405537661210680 0
 83D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\node_modules\.bin\semver133405537475091496 0
-87D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\background.b2c4df55.jpg133405679886903290 0
-86D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3a01df49.css.map133405679886943403 0
-85D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3d214d75.js.map133405680581361650 0
+87D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\background.b2c4df55.jpg133405805823257138 0
+86D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3a01df49.css.map133405805823322370 0
+85D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\index.3d214d75.js.map133405806207794319 0
 88D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\dist\pacman_icon.12c91107.svg133405594569782321 0
 86D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\assets\sounds\eat_ghost.wav133405548798900699 0
 87D:\Downloads-B\Web Developement\Portfolio\mini-game-pacman\assets\sounds\game_start.wav133405548799136557 0

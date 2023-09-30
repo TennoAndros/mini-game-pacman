@@ -19,5 +19,18 @@
     "plugins": [
       "@babel/plugin-transform-runtime"
     ]
+  },
+  "parcel": {
+    "transformers": {
+      "*.ts": [
+        "@parcel/transformer-typescript"
+      ],
+      "*.js": [
+        "@parcel/transformer-babel"
+      ],
+      "*.wav": [
+        "@parcel/transformer-inline-string"
+      ]
+    }
   }
 }
