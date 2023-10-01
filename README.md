@@ -2,6 +2,10 @@
 
 Welcome to the Simple Pac-Man Game! This is a basic implementation of the classic Pac-Man game using JavaScript, HTML, and CSS. While it may not be as smooth or feature-rich as the original, it provides a fun and nostalgic experience with scorekeeping and sound effects.
 
+## Link to Deployed Version
+
+You can access the deployed version of PAC-MAN [here](https://minigame-pac-man.netlify.app/).
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
